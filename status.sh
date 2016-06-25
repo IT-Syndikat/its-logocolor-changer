@@ -4,6 +4,9 @@
 
 ISITOPEN=$(curl -s https://it-syndikat.org/api/status-s.php)
 
+
+cd /srv/test.webs.gwrx.at/its-color/
+
 if [ $ISITOPEN == true ]
 then
 	ln -sf green.png logo.png
